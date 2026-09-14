@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nosotros | Casa Conectada</title>
+  <meta name="description" content="Quiénes somos y por qué escribimos guías de hogar inteligente sin jerga técnica ni humo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#1C2321', paper: '#F7F5F0', moss: '#4A5D45', clay: '#B5654A', line: '#DAD6CC' },
+          fontFamily: { display: ['Fraunces', 'serif'], body: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-paper text-ink font-body antialiased">
+
+  <header class="border-b border-line">
+    <nav class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="font-display text-xl font-bold text-ink">Casa Conectada</a>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-ink/70">
+        <a href="/categoria/iluminacion" class="hover:text-clay transition-colors">Iluminación</a>
+        <a href="/categoria/seguridad" class="hover:text-clay transition-colors">Seguridad</a>
+        <a href="/categoria/asistentes" class="hover:text-clay transition-colors">Asistentes</a>
+        <a href="/guias" class="hover:text-clay transition-colors">Guías</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-6 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-bold leading-tight mb-6">Sobre nosotros</h1>
+
+    <div class="space-y-5 text-ink/80 leading-relaxed">
+      <p>
+        Somos el <strong>Equipo Casa Conectada</strong>. Escribimos guías y comparativas de
+        dispositivos para el hogar inteligente pensadas para gente que quiere una casa más
+        cómoda, no un proyecto de ingeniería de fin de semana.
+      </p>
+      <p>
+        No trabajamos para ninguna marca de las que comparamos. Cuando recomendamos algo, es
+        porque los datos (precio, especificaciones, opiniones contrastadas) respaldan esa
+        recomendación — no porque tengamos un acuerdo comercial de por medio.
+      </p>
+      <p>
+        Este proyecto está en marcha y creciendo: cada semana añadimos nuevas guías sobre
+        iluminación, seguridad y asistentes de voz, siempre con el mismo enfoque — práctico,
+        honesto, sin jerga técnica innecesaria.
+      </p>
+      <p>
+        ¿Alguna sugerencia de tema que te gustaría ver cubierto? Escríbenos desde la
+        <a href="/contacto" class="text-clay hover:underline">página de contacto</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="max-w-5xl mx-auto px-6 py-10 text-sm text-ink/50 flex flex-col md:flex-row justify-between gap-4">
+      <p>© 2026 Casa Conectada</p>
+      <div class="flex gap-6">
+        <a href="/sobre-nosotros" class="hover:text-ink transition-colors">Sobre nosotros</a>
+        <a href="/politica-privacidad" class="hover:text-ink transition-colors">Privacidad</a>
+        <a href="/contacto" class="hover:text-ink transition-colors">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
